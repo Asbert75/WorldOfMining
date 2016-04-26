@@ -1,0 +1,62 @@
+body {
+    background: url(Westfall.png);
+    overflow-x: hidden;
+    background-position: 50% 50%;
+    cursor: url(Cursor/cursor.png), auto;
+}
+
+.title {
+    margin-top: 5%;
+    font-size: 4em;
+    color: fff;
+    font-family: "Morpheus";
+    text-align: center;
+    font-weight: bold;
+    text-shadow: 0 1px 0 #ccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 6px 1px rgba(0,0,0,.1), 0 0 5px rgba(0,0,0,.1), 0 1px 3px rgba(0,0,0,.3), 0 3px 5px rgba(0,0,0,.2), 0 5px 10px rgba(0,0,0,.25), 0 10px 10px rgba(0,0,0,.2), 0 20px 20px rgba(0,0,0,.15);
+}
+
+.Welcome {
+    margin-top: 3%;
+}
+
+.Welcome img:Hover {
+    cursor: url(Cursor/cursorHover.png), auto;
+}
+
+.vein {
+    width: 150px;
+    height: 150px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5em;
+}
+
+.ores {
+    font-family: Friz Quadrata TT;
+    font-weight: 600;
+    font-size: 2em;
+    color: fff;
+}
+
+.ore {
+    height: 40px;
+    width: 40px;
+}
+
+p {
+    font-family: "Morpheus";
+    font-size: 1.5em;
+    color: white;
+    text-transform: uppercase;
+}
+
+.oreAmount {
+    width: 25px;
+    height: 25px;
+    margin-right: 0.4em;
+    margin-bottom: 0.3em;
+}
+
+.Picks {
+    margin-top: 2em;
+}
