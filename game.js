@@ -29,6 +29,6 @@ window.setInterval(function(){
 
 
 
-function closeWelcome() {
-    document.getElemenyById("Welcome").hide();
+function hideWelcome(){
+    document.getElementById("Welcomer").hide();
 }
