@@ -1,6 +1,7 @@
 body {
-    background: url(Westfall.png);
+    background: url(UnGoroTest.png);
     overflow-x: hidden;
+    overflow-y: hidden;
     background-position: 50% 50%;
     cursor: url(Cursor/cursor.png), auto;
 }
@@ -16,43 +17,36 @@ body {
 }
 
 .Welcome {
-    margin-top: 3%;
+    margin-top: 4em;
+}
+
+.vein {
+    position: fixed;
+    top: 12.8em;
+    left: 22em;
+    height: 48px;
+    width: 48px;
+}
+
+.Mine {
+    margin-top: 8em;
 }
 
 .Welcome img:Hover {
     cursor: url(Cursor/cursorHover.png), auto;
 }
 
-.ores {
-    font-family: Friz Quadrata TT;
-    font-weight: 600;
+.counter {
+    font-family: Verdana;
     font-size: 2em;
-    color: fff;
-}
-
-.ore {
-    height: 40px;
-    width: 40px;
-}
-
-p {
-    font-family: "Morpheus";
-    font-size: 1.5em;
     color: white;
-    text-transform: uppercase;
+    text-align: center;
+    
 }
 
-.oreAmount {
-    width: 25px;
-    height: 25px;
-    margin-right: 0.4em;
-    margin-bottom: 0.3em;
+#game {
+    display: none;
 }
-
-.Picks {
-    margin-top: 2em;
-}
-
 
 .pulse2 {
 	-webkit-animation: pulse2 1s linear infinite;
@@ -60,8 +54,8 @@ p {
 	-ms-animation: pulse2 1s linear infinite;
 	animation: pulse2 1s linear infinite;
 }
-.pulse2:active {
-    transform: scale(3);
+.pulse2:Hover {
+    cursor: url(Cursor/Mine.png), auto;
 }
 
 @keyframes "pulse2" {
@@ -73,11 +67,11 @@ p {
    	transform: scale(1);
  }
  50% {
-    -webkit-transform: scale(1.1);
-   	-moz-transform: scale(1.1);
-   	-o-transform: scale(1.1);
-   	-ms-transform: scale(1.1);
-   	transform: scale(1.1);
+    -webkit-transform: scale(1.05);
+   	-moz-transform: scale(1.05);
+   	-o-transform: scale(1.05);
+   	-ms-transform: scale(1.05);
+   	transform: scale(1.05);
  }
  100% {
     -webkit-transform: scale(1);
@@ -95,8 +89,8 @@ p {
    transform: scale(1);
  }
  50% {
-   -moz-transform: scale(1.1);
-   transform: scale(1.1);
+   -moz-transform: scale(1.05);
+   transform: scale(1.05);
  }
  100% {
    -moz-transform: scale(1);
@@ -111,8 +105,8 @@ p {
    transform: scale(1);
  }
  50% {
-   -webkit-transform: scale(1.1);
-   transform: scale(1.1);
+   -webkit-transform: scale(1.05);
+   transform: scale(1.05);
  }
  100% {
    -webkit-transform: scale(1);
@@ -127,10 +121,113 @@ p {
    transform: scale(1);
  }
  50% {
-   -ms-transform: scale(1.1);
-   transform: scale(1.1);
+   -ms-transform: scale(1.05);
+   transform: scale(1.05);
  }
  100% {
    -ms-transform: scale(1);
    transform: scale(1);
  }
+}
+   
+.item1:hover, .item2:hover, .item3:hover, .item4:hover, .item5:hover, .item6:hover {
+    cursor: url(Cursor/Buy.png), auto;
+}
+
+.enchant1:hover, .enchant2:hover, .enchant3:hover, .enchant4:hover {
+    cursor: url(Cursor/Enchant.png), auto;
+}
+
+.item1, .item2, .item3, .item4, .item5, .item6, .enchant1, .enchant2, .enchant3, .enchant4 {
+    width: 64px;
+    height: 64px;
+    background: rgba(0, 0, 0, 0);
+}
+
+.item1 {
+    position: fixed;
+    top: 14em;
+    left: 5.6em;
+}
+
+.item2 {
+    position: fixed;
+    top: 19em;
+    left: 5.6em;
+}
+
+
+.item3 {
+    position: fixed;
+    top: 24em;
+    left: 5.6em;
+}
+
+.item4 {
+    position: fixed;
+    top: 29em;
+    left: 5.6em;
+}
+
+.item5 {
+    position: fixed;
+    top: 14em;
+    left: 11.35em;
+}
+
+.item6 {
+    position: fixed;
+    top: 19em;
+    left: 11.35em;
+}
+
+.enchant1 {
+    position: fixed;
+    top: 14.7em;
+    right: 18.85em;
+}
+
+.enchant2 {
+    position: fixed;
+    top: 19.7em;
+    right: 18.85em;
+}
+
+.enchant3 {
+    position: fixed;
+    top: 24.7em;
+    right: 18.85em;
+}
+
+.enchant4 {
+    position: fixed;
+    top: 29.7em;
+    right: 18.85em;
+}
+
+.information {
+    display: none;
+    position: absolute;
+    top: 0.15em;
+    left: 5em;
+}
+
+.enchantInformation {
+    display: none;
+    position: absolute;
+    top: 0.15em;
+    left: -20em;
+}
+
+.item1:hover .information, .item2:hover .information, .item3:hover .information, .item4:hover .information, .item5:hover .information, .item6:hover .information, .enchant1:hover .enchantInformation, .enchant2:hover .enchantInformation, .enchant3:hover .enchantInformation, .enchant4:hover .enchantInformation {
+    display: block
+}
+
+
+.darken {
+    position: absolute;
+    height: 800px;
+    width: 1500px;
+    background: rgba(0, 0, 0, 0.75);
+    left: 0;
+}
