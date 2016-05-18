@@ -21,11 +21,51 @@
         <div class="row" id="darken">
             <div class="darken"></div>
         </div>
+        
         <div class="row Welcome" id="Welcome">
-            <div class="col-lg-4 col-lg-offset-4">
-                <img src="Welcome.png" alt="Welcome!" class="img-responsive center-block" onclick="hideWelcome()">
+         <div class="col-lg-4 col-lg-offset-4">
+          <table id="Table_01" width="351" height="525" border="0" cellpadding="0" cellspacing="0">
+	       <tr>
+		    <td colspan="4">
+			<img src="images/Welcome2_01.png" width="350" height="58" alt=""></td>
+		    <td>
+			<img src="images/spacer.gif" width="1" height="58" alt=""></td>
+	      </tr>
+	      <tr>
+		   <td colspan="3" rowspan="2">
+			<img src="images/Welcome2_02.png" width="327" height="401" alt=""></td>
+		   <td>
+               <a id="CloseWelcome"><img src="images/Welcome2_03.png" width="23" height="22" alt=""></a></td>
+		     <td>
+			<img src="images/spacer.gif" width="1" height="22" alt=""></td>
+	        </tr>
+	       <tr>
+		    <td rowspan="3">
+			<img src="images/Welcome2_04.png" width="23" height="445" alt=""></td>
+		    <td>
+			<img src="images/spacer.gif" width="1" height="379" alt=""></td>
+	       </tr>
+	       <tr>
+		   <td rowspan="2">
+		  	<img src="images/Welcome2_05.png" width="21" height="66" alt=""></td>
+		   <td>
+               <a id="CloseWelcome2"><img src="images/Welcome2_06.png" width="102" height="17" alt=""></a>
+                </td>
+		   <td rowspan="2">
+			<img src="images/Welcome2_07.png" width="204" height="66" alt=""></td>
+		   <td>
+			<img src="images/spacer.gif" width="1" height="17" alt=""></td>
+	       </tr>
+	       <tr>
+		   <td>
+			<img src="images/Welcome2_08.png" width="102" height="49" alt=""></td>
+		   <td>
+			<img src="images/spacer.gif" width="1" height="49" alt=""></td>
+	       </tr>
+        </table>
             </div>
         </div>
+        
         
     <div id="game">
         <div class="row Mine" id="Mine">
@@ -36,50 +76,70 @@
         
         <div class="row counter" id="counter">
             <div class="col-lg-12">
-                    <img src="ThoriumOre.png" class="vein"/>
-                    <p id="ores">0</p>
+                <div class="col-lg-1 col-lg-offset-5"><img src="ThoriumOre.png" class="vein"/></div>
+                <div class="col-lg-1"><p id="ores">0</p></div>
             </div>
         </div>
         
-        <div class="lel" style="font-size: 2em; color: white;">
-        <p id="commonCost">5</p>
-            <p id="commons">0</p></div>
+        <div class="item4" onclick="buyLegendary()">
+            <img class="information" src="PickText/LegendaryText.png" alt="Legendary Text">
+            <div class="itemInfo">
+                <p id="legendaryCost">15000</p>
+                <p id="legendaryCount">0</p>
+            </div>
+        </div>
         
-        <div class="item1" onclick="buyShovel()">
-            <img class="information" src="PickText/ShovelText.png" alt="Shovel Text">
+        <div class="item3" onclick="buyCore()">
+            <img class="information" src="PickText/CoreText.png" alt="Core Text">
+            <div class="itemInfo">
+                <p id="coreCost">75</p>
+                <p id="coreCount">0</p>
+            </div>
         </div>
         
         <div class="item2" onclick="buyBasic()">
             <img class="information" src="PickText/BasicText.png" alt="Basic Text">
-        </div>
-            
-        <div class="item3" onclick="buyCore()">
-            <img class="information" src="PickText/CoreText.png" alt="Core Text">
-        </div>
-        
-        <div class="item4" onclick="buyArtisan()">
-            <img class="information" src="PickText/ArtisanText.png" alt="Artisan Text">
+            <div class="itemInfo">
+                <p id="basicCost">20</p>
+                <p id="basicCount">0</p>
+            </div>
         </div>
         
-        <div class="item5" onclick="buyAdvanced()">
-            <img class="information" src="PickText/AdvancedText.png" alt="Advanced Text">
-        </div>
-        
-        <div class="item6" onclick="buyLegendary()">
-            <img class="information" src="PickText/LegendaryText.png" alt="Legendary Text">
+        <div class="item1" onclick="buyShovel()">
+            <img class="information" src="PickText/ShovelText.png" alt="Shovel Text">
+            <div class="itemInfo">
+                <p id="shovelCost">5</p>
+                <p id="shovelCount">0</p>
+            </div>
         </div>
             
         <div class="enchant1" onclick="buyCommon()">
             <img class="enchantInformation" src="EnchantText/CommonText.png" alt="Common Text">
+            <div class="itemInfo">
+                <p id="commonCost">5</p>
+                <p id="commonCount">0</p>
+            </div>
         </div>
         <div class="enchant2" onclick="buyUncommon()">
             <img class="enchantInformation" src="EnchantText/UncommonText.png" alt="Uncommon Text">
+            <div class="itemInfo">
+                <p id="uncommonCost">60</p>
+                <p id="uncommonCount">0</p>
+            </div>
         </div>
         <div class="enchant3" onclick="buyRare()">
             <img class="enchantInformation" src="EnchantText/RareText.png" alt="Rare Text">
+            <div class="itemInfo">
+                <p id="rareCost">375</p>
+                <p id="rareCount">0</p>
+            </div>
         </div>
         <div class="enchant4" onclick="buyEpic()">
             <img class="enchantInformation" src="EnchantText/EpicText.png" alt="Epic Text">
+            <div class="itemInfo">
+                <p id="epicCost">1500</p>
+                <p id="epicCount">0</p>
+            </div>
         </div>
         
     </div>

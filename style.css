@@ -1,19 +1,9 @@
 body {
-    background: url(UnGoroTest.png);
+    background: url(UnGoro.png);
     overflow-x: hidden;
     overflow-y: hidden;
     background-position: 50% 50%;
     cursor: url(Cursor/cursor.png), auto;
-}
-
-.title {
-    margin-top: 5%;
-    font-size: 4em;
-    color: fff;
-    font-family: "Morpheus";
-    text-align: center;
-    font-weight: bold;
-    text-shadow: 0 1px 0 #ccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 6px 1px rgba(0,0,0,.1), 0 0 5px rgba(0,0,0,.1), 0 1px 3px rgba(0,0,0,.3), 0 3px 5px rgba(0,0,0,.2), 0 5px 10px rgba(0,0,0,.25), 0 10px 10px rgba(0,0,0,.2), 0 20px 20px rgba(0,0,0,.15);
 }
 
 .Welcome {
@@ -21,9 +11,8 @@ body {
 }
 
 .vein {
-    position: fixed;
-    top: 12.8em;
-    left: 22em;
+    position: absolute;
+    left: 2em;
     height: 48px;
     width: 48px;
 }
@@ -32,15 +21,16 @@ body {
     margin-top: 8em;
 }
 
-.Welcome img:Hover {
-    cursor: url(Cursor/cursorHover.png), auto;
+#CloseWelcome, #CloseWelcome2 {
+    Cursor: url(Cursor/cursorHover.png), auto;
 }
+
 
 .counter {
     font-family: Verdana;
     font-size: 2em;
     color: white;
-    text-align: center;
+    text-align: left;
     
 }
 
@@ -130,7 +120,7 @@ body {
  }
 }
    
-.item1:hover, .item2:hover, .item3:hover, .item4:hover, .item5:hover, .item6:hover {
+.item1:hover, .item2:hover, .item3:hover, .item4:hover {
     cursor: url(Cursor/Buy.png), auto;
 }
 
@@ -138,10 +128,10 @@ body {
     cursor: url(Cursor/Enchant.png), auto;
 }
 
-.item1, .item2, .item3, .item4, .item5, .item6, .enchant1, .enchant2, .enchant3, .enchant4 {
+.item1, .item2, .item3, .item4, .enchant1, .enchant2, .enchant3, .enchant4 {
     width: 64px;
     height: 64px;
-    background: rgba(0, 0, 0, 0);
+    background: rgba(255, 255, 255, 0);
 }
 
 .item1 {
@@ -167,18 +157,6 @@ body {
     position: fixed;
     top: 29em;
     left: 5.6em;
-}
-
-.item5 {
-    position: fixed;
-    top: 14em;
-    left: 11.35em;
-}
-
-.item6 {
-    position: fixed;
-    top: 19em;
-    left: 11.35em;
 }
 
 .enchant1 {
@@ -210,6 +188,7 @@ body {
     position: absolute;
     top: 0.15em;
     left: 5em;
+    z-index: 5;
 }
 
 .enchantInformation {
@@ -217,9 +196,10 @@ body {
     position: absolute;
     top: 0.15em;
     left: -20em;
+    z-index: 5;
 }
 
-.item1:hover .information, .item2:hover .information, .item3:hover .information, .item4:hover .information, .item5:hover .information, .item6:hover .information, .enchant1:hover .enchantInformation, .enchant2:hover .enchantInformation, .enchant3:hover .enchantInformation, .enchant4:hover .enchantInformation {
+.item1:hover .information, .item2:hover .information, .item3:hover .information, .item4:hover .information, .enchant1:hover .enchantInformation, .enchant2:hover .enchantInformation, .enchant3:hover .enchantInformation, .enchant4:hover .enchantInformation {
     display: block
 }
 
@@ -230,4 +210,20 @@ body {
     width: 1500px;
     background: rgba(0, 0, 0, 0.75);
     left: 0;
+}
+
+.itemInfo {
+    z-index: -1 !IMPORTANT;
+    font-family: Verdana;
+    font-size: 1.3em;
+    color: white;
+    position: absolute;
+    left: 5em;
+    top: 0.4em;
+    text-shadow: 0 1px 0 #ccc,
+               0 2px 0 #c9c9c9
+}
+
+.larger {
+    transform: scale(2) !IMPORTANT;
 }
